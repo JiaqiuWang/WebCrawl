@@ -144,12 +144,13 @@ def main_operation():
              "_twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AD" \
              "oPY3JlYXRlZF9hdGwrCP4qDThaAToMY3NyZl9p%250AZCIlOTg4YjgzMmVmOTc4MWEwNTA1NzBlOTQwYzU1YTZmNDU6B2lkIiU5M" \
              "GE1%250AODYxNjcyZjUwNTExYmUwMDIxOGE0N2NkNjM3Mw%253D%253D--e42852eddc89b0050cb3438e8a35d5395f3d0d6d"
-    user_name = "praveenscience"
-    initial_max_position = "834720983453949953"
-    url = "https://twitter.com/i/profiles/" \
-          "show/"+user_name+"/timeline/with_replies?" \
-          "include_available_features=1&include_entities=1&" \
-          "max_position="+initial_max_position+"&reset_error_state=false"
+    user_name = "mattlunn"
+    initial_max_position = "694239700299685888"
+    url = "https://twitter.com/i/profiles/show/"+user_name+"/timeline/" \
+          "with_replies?" \
+          "include_available_features=1&" \
+          "include_entities=1&max_position="+initial_max_position+"&" \
+          "reset_error_state=false"
     ""
     # 写入文件名
     filename = "post.txt"

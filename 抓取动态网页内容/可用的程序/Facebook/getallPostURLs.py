@@ -16,9 +16,9 @@ class ParseTimeFlowData:
     # list_all_next_cursor = []
 
     """构造函数"""
-    def __init__(self, filename):
-
+    def __init__(self, filename, source):
         self.filename = filename
+        self.source = source
 
     """析构函数"""
     def __del__(self):
@@ -33,7 +33,7 @@ class ParseTimeFlowData:
     """
     def get_all_min_position_id(self):
             # 读取网页文本
-            fo = open("post.txt", "r+", encoding='utf-8')
+            fo = open(self.source, "r+", encoding='utf-8')
             content = fo.read()
             print("str:", content)
             position = fo.tell()
@@ -79,6 +79,12 @@ class ParseTimeFlowData:
                 size += 1
                 # 写入到文本文件中
                 self.input_text(i)
+            if i.find("photos/a") is not -1:
+                url = "https://www.facebook.com"+i
+                size += 1
+                print("type:", type(url), "URL:", url)
+                # 写入到文本文件中
+                self.input_text(url)
             if i.find("story") is not -1:
                 i = i.replace("amp;", "")
                 url = "https://www.facebook.com"+i
@@ -103,11 +109,13 @@ class ParseTimeFlowData:
         fo.write('\n')
         fo.close()
 
-#------------------------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------------------------
 
     """
     HTMLParse解析HTML页面类-class
     """
+
+
 class MyHTMLParser(HTMLParser):
     def __init__(self):
         HTMLParser.__init__(self)
@@ -126,18 +134,14 @@ class MyHTMLParser(HTMLParser):
 # ----------------------------------------------------------------------------------------------------------
 
 
-
-
-# ----------------------------------------------------------------------------------------------------------
-
-
 def main_operation():
     """Part1: 设置参数"""
 
     # 写入文件名
     filename = "URLs.txt"
+    source = "post.txt"  # 源代码
     """Part2: 循环获取"""
-    var = ParseTimeFlowData(filename)  # 创建类的对象
+    var = ParseTimeFlowData(filename, source)  # 创建类的对象
     var.get_all_min_position_id()
 
 
