@@ -148,12 +148,12 @@ def main_operation():
              "xhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCMdzV" \
              "gdaAToMY3NyZl9p%250AZCIlYjM0OTVjNjNkMGU1NDhkYjNiNGVlNzU5MGE0OWEwYjg6B2lkIiUxMDM4%250AYzY0OGZmODg4YmIz" \
              "MGFjYWZmNDk3ZmQ3MGRiOQ%253D%253D--8149e1648386cb7b29ffc5bfa696430eacd6a0b6"
-    user_name = "mattlunn"
-    initial_max_position = "745142523056644096"
-    url = "https://twitter.com/"+user_name+"/likes/timeline?" \
-          "include_available_features=1&include_entities=1&" \
-          "max_position="+initial_max_position+"&" \
-          "reset_error_state=false"
+    user_name = "jaceklaskowski"
+    initial_max_position = "775991102277095424"
+    url = "https://twitter.com/"+user_name+"/likes" \
+          "/timeline?include_available_features=1&i" \
+          "nclude_entities=1&max_po" \
+          "sition="+initial_max_position+"&reset_error_state=false"
     ""
     # 写入文件名
     filename = "like.txt"
