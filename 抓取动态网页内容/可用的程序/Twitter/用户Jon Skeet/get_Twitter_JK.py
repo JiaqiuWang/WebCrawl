@@ -136,20 +136,21 @@ def main_operation():
     """Part1: 设置参数"""
     user_agent = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36" \
                  " (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36"
-    cookie = "guest_id=v1%3A148664569056265879; pid=\"v3:1486645696937503730135617\"; " \
-             "kdt=7gxK1Be6yrEmLhESp0kP1gwB3cAutlN1rKmjaUAs; remember_checked_on=1; " \
-             "twid=\"u=819088284554907648\"; auth_token=e66e25d0cf3867390d76b1625500fe59ffe37577;" \
-             " lang=zh-cn; external_referer=\"Bm9gjDJKLkNrt2m+3MdxgR/vzO/bKOljieNvYv/IjqfRHVViqJvo/VCe/PT" \
-             "ZWShe9DV/B4Y/01s=|0\"; ct0=e9f20efaaa424ec23ac897e57ae9d194; _ga=GA1.2.457188224.1486645696; _gat=1; " \
-             "_twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFzaHsABjoKQHVzZWR7AD" \
-             "oPY3JlYXRlZF9hdGwrCP4qDThaAToMY3NyZl9p%250AZCIlOTg4YjgzMmVmOTc4MWEwNTA1NzBlOTQwYzU1YTZmNDU6B2lkIiU5M" \
-             "GE1%250AODYxNjcyZjUwNTExYmUwMDIxOGE0N2NkNjM3Mw%253D%253D--e42852eddc89b0050cb3438e8a35d5395f3d0d6d"
-    user_name = "jaceklaskowski"
-    initial_max_position = "850820578273525760"
-    url = "https://twitter.com/i/profiles/show/"+user_name+"/t" \
-          "imeline/with_replies?include_available_featu" \
-          "res=1&include_entities=1&max_pos" \
-          "ition="+initial_max_position+"&reset_error_state=false"
+    cookie = "guest_id=v1%3A149542601393137205; ads_prefs=\"HBERAAA=\"; kdt=meEoLRALDtbNkDaG" \
+             "Ps5GXHBoKIbMfR9fSANSSkOZ; remember_checked_on=1; twid=\"u=819088284554907648\";" \
+             " auth_token=748137e504245e4dc327c8758abba38a159758db; moments_profile_moments_n" \
+             "av_tooltip_other=true; personalization_id=\"v1_h7XyNQpjCG3XbayJj35JvQ==\"; lang=zh-cn; " \
+             "external_referer=padhuUp37zgjsdHoV5WIY%2B0RxDIrwK%2FmcpOOiAtJLVDuOd4cF9htzYmEP1d9" \
+             "M%2B4sgDJrunHBtX3a1r4eAbhfgA%3D%3D|0|8e8t2xd8A2w%3D; ct0=cfa8f507b5ea5d1fd0399ce6d" \
+             "860b7e2; _gat=1; _ga=GA1.2.887829017.1495458274; _gid=GA1.2.1795551209.1497966819; " \
+             "_twitter_sess=BAh7CSIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo%250ASGFz" \
+             "aHsABjoKQHVzZWR7ADoPY3JlYXRlZF9hdGwrCFfpsMlcAToMY3NyZl9p%250AZCIlMmUwODI4YzI0ZjBlNTU" \
+             "yODBkMDU0YzMxY2UxOWYwMmU6B2lkIiUyNjcx%250AMDQ2N2JkOWYzZjc1ZWEzN2M1MTM5MDMzYjVhOA%253D%" \
+             "253D--31c0738c0039dcbac56f9a147eb17317377398f1"
+    user_name = "IonicaBizau"
+    initial_max_position = "452022521966379008"
+    url = "https://twitter.com/i/profiles/show/"+user_name+"/timeline/with_replies?include_available_features=1&incl" \
+          "ude_entities=1&max_position="+initial_max_position+"&reset_error_state=false"
     ""
     # 写入文件名
     filename = "post.txt"

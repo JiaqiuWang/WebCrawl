@@ -58,7 +58,7 @@ class ParseTimeFlowData:
             print("i:", i)
             if "comments" in i or "page" in i:
                 continue
-            url = "https://www.flickr.com"+i
+            url = "https://www.ncbi.nlm.nih.gov"+i
             size += 1
             url = url.replace("?taken-by=vma_tm", "")
             print("type:", type(url), "URL:", url)

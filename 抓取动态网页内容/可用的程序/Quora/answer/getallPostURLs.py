@@ -33,7 +33,7 @@ class ParseTimeFlowData:
     """
     def get_all_min_position_id(self):
             # 读取网页文本
-            fo = open(self.source, "r+", encoding='gbk')
+            fo = open(self.source, "r+", encoding='utf-8')
             content = fo.read()
             print("str:", content)
             position = fo.tell()
@@ -56,12 +56,8 @@ class ParseTimeFlowData:
         size = 0
         for i in link_list:
             print("i:", i)
-            if "comments" in i or "page" in i:
-                continue
-            url = "https://www.flickr.com"+i
+            url = "https://www.quora.com" + i
             size += 1
-            url = url.replace("?taken-by=vma_tm", "")
-            print("type:", type(url), "URL:", url)
             # 写入到文本文件中
             self.input_text(url)
             print("-------------------------------")
